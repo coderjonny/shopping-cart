@@ -11,7 +11,7 @@
 
 ### Time limit: 60 minutes
 
-```
+```bash
 // File structure:
 // ├── contexts/
 // │   └── CartContext.js (to be implemented)
@@ -25,7 +25,7 @@
 ```
 
 Here's an example of context API usage:
-```
+```javascript
 import React, { useState, createContext, useContext } from "react"
 import { createRoot } from "react-dom/client"
 
