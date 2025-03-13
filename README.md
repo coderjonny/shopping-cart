@@ -1,5 +1,31 @@
 # Welcome to your Expo app 👋
 
+## React Native Assessment Challenge: Shopping Cart with Context API
+
+- Task: Complete a shopping cart implementation using React Context API to manage global state.
+- Requirements:
+   1. Implement a CartContext that manages products in cart across multiple screens
+   2. Create a cart provider that exposes methods to add, remove, and update cart items
+   3. Build screens that consume the context (ProductList and Cart)
+   4. Calculate cart totals (items count, subtotal)
+   5. Implement persistence using AsyncStorage
+   6. Add proper error handling and loading states
+
+- Time limit: 60 minutes
+
+```
+// File structure:
+// ├── contexts/
+// │   └── CartContext.js (to be implemented)
+// ├── screens/
+// │   ├── ProductListScreen.js (partially implemented)
+// │   └── CartScreen.js (to be implemented)
+// ├── components/
+// │   ├── ProductItem.js (implemented)
+// │   └── CartItem.js (to be implemented)
+// └── App.js (partially implemented)
+```
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
