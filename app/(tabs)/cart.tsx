@@ -4,12 +4,10 @@ import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
-import ProductListScreen from "@/screens/ProductListScreen";
 import { router } from "expo-router";
-import { useCart } from "@/contexts/CartContext";
+import CartScreen from "@/screens/CartScreen";
 
 export default function HomeScreen() {
-  const { totalItems } = useCart();
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
@@ -21,10 +19,10 @@ export default function HomeScreen() {
       }
     >
       <Button
-        title={`Cart Items ${totalItems}`}
-        onPress={() => router.navigate("cart")}
+        title="CART"
+        onPress={() => router.navigate("/")}
       ></Button>
-      <ProductListScreen navigation={undefined} />
+      <CartScreen />
     </ParallaxScrollView>
   );
 }
